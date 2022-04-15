@@ -1,0 +1,248 @@
+2022-04-13 02:03:02,601 INFO org.springframework.boot.StartupInfoLogger [main] Starting Accesoadatosaav2Application using Java 11.0.11 on DESKTOP-BU39U52 with PID 19104 (C:\Users\Jose\Desktop\accesoadatosaav2\target\classes started by Jose in C:\Users\Jose\Desktop\accesoadatosaav2)
+2022-04-13 02:03:02,606 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-04-13 02:03:02,619 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-04-13 02:03:03,451 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 02:03:03,452 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-13 02:03:03,502 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.CamionRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-13 02:03:03,505 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.ConductorRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-13 02:03:03,507 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.PaqueteRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-13 02:03:03,510 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.UsuarioRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-13 02:03:03,512 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 46 ms. Found 0 JPA repository interfaces.
+2022-04-13 02:03:03,544 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 02:03:03,544 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-04-13 02:03:03,608 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 63 ms. Found 4 Reactive MongoDB repository interfaces.
+2022-04-13 02:03:04,509 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-04-13 02:03:04,523 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-13 02:03:04,524 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-04-13 02:03:04,524 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-13 02:03:04,713 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-04-13 02:03:04,713 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2049 ms
+2022-04-13 02:03:04,842 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-04-13 02:03:04,973 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-04-13 02:03:05,025 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-13 02:03:05,091 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-13 02:03:05,268 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-13 02:03:05,399 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-13 02:03:05,636 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-13 02:03:05,646 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-13 02:03:05,918 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-13 02:03:06,477 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='62561339e10a5b7d50f907ce', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:326}] to localhost:27017
+2022-04-13 02:03:06,477 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='62561339e10a5b7d50f907ce', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:325}] to localhost:27017
+2022-04-13 02:03:06,478 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='62561339e10a5b7d50f907ce', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=77732400}
+2022-04-13 02:03:06,525 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-13 02:03:06,846 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-13 02:03:06,860 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-13 02:03:06,898 INFO org.springframework.boot.StartupInfoLogger [main] Started Accesoadatosaav2Application in 4.749 seconds (JVM running for 5.577)
+2022-04-13 02:03:09,384 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 02:03:09,385 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-04-13 02:03:09,387 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 2 ms
+2022-04-13 02:03:09,509 INFO com.josefco.accesoadatosaav2.controller.ConductorController [http-nio-8080-exec-2] begin findAllConductores
+2022-04-13 02:03:09,509 INFO com.josefco.accesoadatosaav2.controller.ConductorController [http-nio-8080-exec-1] begin findAllConductores
+2022-04-13 02:03:09,546 INFO com.josefco.accesoadatosaav2.controller.ConductorController [http-nio-8080-exec-1] end findAllConductores
+2022-04-13 02:03:09,546 INFO com.josefco.accesoadatosaav2.controller.ConductorController [http-nio-8080-exec-2] end findAllConductores
+2022-04-13 02:03:09,698 INFO com.mongodb.diagnostics.logging.SLF4JLogger [nioEventLoopGroup-2-4] Opened connection [connectionId{localValue:4, serverValue:328}] to localhost:27017
+2022-04-13 02:03:09,698 INFO com.mongodb.diagnostics.logging.SLF4JLogger [nioEventLoopGroup-2-3] Opened connection [connectionId{localValue:3, serverValue:327}] to localhost:27017
+2022-04-13 02:03:11,725 INFO com.josefco.accesoadatosaav2.controller.CamionController [http-nio-8080-exec-5] begin findAllCamiones
+2022-04-13 02:03:11,726 INFO com.josefco.accesoadatosaav2.controller.CamionController [http-nio-8080-exec-5] End findAllCamiones
+2022-04-13 02:03:11,738 INFO com.josefco.accesoadatosaav2.controller.CamionController [http-nio-8080-exec-6] begin findAllCamiones
+2022-04-13 02:03:11,739 INFO com.josefco.accesoadatosaav2.controller.CamionController [http-nio-8080-exec-6] End findAllCamiones
+2022-04-13 02:03:17,225 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-10] begin getUsuarios
+2022-04-13 02:03:17,225 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] begin getUsuarios
+2022-04-13 02:03:17,226 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] end getUsuarios
+2022-04-13 02:03:17,226 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-10] end getUsuarios
+2022-04-13 02:15:46,882 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] begin getUsuarios
+2022-04-13 02:15:46,883 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] end getUsuarios
+2022-04-13 17:55:19,914 INFO org.springframework.boot.StartupInfoLogger [main] Starting Accesoadatosaav2Application using Java 11.0.11 on DESKTOP-BU39U52 with PID 6924 (C:\Users\Jose\Desktop\accesoadatosaav2\target\classes started by Jose in C:\Users\Jose\Desktop\accesoadatosaav2)
+2022-04-13 17:55:19,914 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-04-13 17:55:19,921 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-04-13 17:55:21,367 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 17:55:21,368 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-13 17:55:21,464 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.CamionRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-13 17:55:21,470 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.ConductorRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-13 17:55:21,479 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.PaqueteRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-13 17:55:21,494 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.UsuarioRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-13 17:55:21,498 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 87 ms. Found 0 JPA repository interfaces.
+2022-04-13 17:55:21,559 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-13 17:55:21,560 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-04-13 17:55:21,679 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 117 ms. Found 4 Reactive MongoDB repository interfaces.
+2022-04-13 17:55:23,051 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-04-13 17:55:23,071 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-13 17:55:23,072 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-04-13 17:55:23,073 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-13 17:55:23,485 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-04-13 17:55:23,485 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3481 ms
+2022-04-13 17:55:23,719 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-04-13 17:55:24,145 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-04-13 17:55:24,259 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-13 17:55:24,450 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-13 17:55:24,775 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-13 17:55:24,970 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-13 17:55:25,249 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-13 17:55:25,259 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-13 17:55:25,558 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-13 17:55:26,104 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6256f26d5fab114504e0f1be', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:329}] to localhost:27017
+2022-04-13 17:55:26,104 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='6256f26d5fab114504e0f1be', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:330}] to localhost:27017
+2022-04-13 17:55:26,105 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6256f26d5fab114504e0f1be', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=86125000}
+2022-04-13 17:55:26,163 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-13 17:55:26,476 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-13 17:55:26,490 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-13 17:55:26,530 INFO org.springframework.boot.StartupInfoLogger [main] Started Accesoadatosaav2Application in 7.353 seconds (JVM running for 8.237)
+2022-04-13 18:01:26,021 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 18:01:26,021 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-04-13 18:01:26,023 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2022-04-13 18:01:26,140 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-1] begin getUsuarios
+2022-04-13 18:01:26,140 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] begin getUsuarios
+2022-04-13 18:01:26,172 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] end getUsuarios
+2022-04-13 18:01:26,172 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-1] end getUsuarios
+2022-04-13 18:01:26,298 INFO com.mongodb.diagnostics.logging.SLF4JLogger [nioEventLoopGroup-2-4] Opened connection [connectionId{localValue:4, serverValue:332}] to localhost:27017
+2022-04-13 18:01:26,298 INFO com.mongodb.diagnostics.logging.SLF4JLogger [nioEventLoopGroup-2-3] Opened connection [connectionId{localValue:3, serverValue:331}] to localhost:27017
+2022-04-13 18:02:42,359 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] begin getUsuarios
+2022-04-13 18:02:42,360 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] end getUsuarios
+2022-04-13 18:02:42,362 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-8] begin getUsuarios
+2022-04-13 18:02:42,362 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-8] end getUsuarios
+2022-04-13 18:04:43,941 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] begin getUsuarios
+2022-04-13 18:04:43,942 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] begin getUsuarios
+2022-04-13 18:04:43,943 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] end getUsuarios
+2022-04-13 18:04:43,943 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] end getUsuarios
+2022-04-13 18:14:49,615 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] begin getUsuarios
+2022-04-13 18:14:49,615 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-10] begin getUsuarios
+2022-04-13 18:14:49,616 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] end getUsuarios
+2022-04-13 18:14:49,616 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-10] end getUsuarios
+2022-04-13 18:15:17,075 INFO com.josefco.accesoadatosaav2.controller.ConductorController [http-nio-8080-exec-5] begin findAllConductores
+2022-04-13 18:15:17,075 INFO com.josefco.accesoadatosaav2.controller.ConductorController [http-nio-8080-exec-6] begin findAllConductores
+2022-04-13 18:15:17,076 INFO com.josefco.accesoadatosaav2.controller.ConductorController [http-nio-8080-exec-5] end findAllConductores
+2022-04-13 18:15:17,076 INFO com.josefco.accesoadatosaav2.controller.ConductorController [http-nio-8080-exec-6] end findAllConductores
+2022-04-13 18:16:43,417 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-1] begin getUsuarios
+2022-04-13 18:16:43,417 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] begin getUsuarios
+2022-04-13 18:16:43,418 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-1] end getUsuarios
+2022-04-13 18:16:43,418 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] end getUsuarios
+2022-04-13 18:19:17,524 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] begin getUsuarios
+2022-04-13 18:19:17,526 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] end getUsuarios
+2022-04-13 18:19:17,527 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-8] begin getUsuarios
+2022-04-13 18:19:17,528 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-8] end getUsuarios
+2022-04-13 18:20:55,097 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] begin getUsuarios
+2022-04-13 18:20:55,097 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] end getUsuarios
+2022-04-13 18:20:55,101 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] begin getUsuarios
+2022-04-13 18:20:55,102 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] end getUsuarios
+2022-04-13 18:24:42,083 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-10] begin getUsuarios
+2022-04-13 18:24:42,083 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] begin getUsuarios
+2022-04-13 18:24:42,084 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] end getUsuarios
+2022-04-13 18:24:42,084 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-10] end getUsuarios
+2022-04-13 18:25:13,914 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-5] begin getUsuarios
+2022-04-13 18:25:13,914 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-6] begin getUsuarios
+2022-04-13 18:25:13,915 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-5] end getUsuarios
+2022-04-13 18:25:13,915 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-6] end getUsuarios
+2022-04-13 18:25:50,032 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-1] begin getUsuarios
+2022-04-13 18:25:50,033 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-1] end getUsuarios
+2022-04-13 18:25:50,033 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] begin getUsuarios
+2022-04-13 18:25:50,034 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] end getUsuarios
+2022-04-13 18:27:05,758 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] begin getUsuarios
+2022-04-13 18:27:05,759 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] end getUsuarios
+2022-04-13 18:27:05,761 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-8] begin getUsuarios
+2022-04-13 18:27:05,761 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-8] end getUsuarios
+2022-04-13 18:29:47,681 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] begin getUsuarios
+2022-04-13 18:29:47,681 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] begin getUsuarios
+2022-04-13 18:29:47,682 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] end getUsuarios
+2022-04-13 18:29:47,682 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] end getUsuarios
+2022-04-13 18:33:10,924 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] begin getUsuarios
+2022-04-13 18:33:10,924 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-10] begin getUsuarios
+2022-04-13 18:33:10,925 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-10] end getUsuarios
+2022-04-13 18:33:10,925 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] end getUsuarios
+2022-04-13 18:34:00,960 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-6] begin getUsuarios
+2022-04-13 18:34:00,961 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-5] begin getUsuarios
+2022-04-13 18:34:00,961 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-6] end getUsuarios
+2022-04-13 18:34:00,961 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-5] end getUsuarios
+2022-04-13 18:39:14,727 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] begin getUsuarios
+2022-04-13 18:39:14,728 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-1] begin getUsuarios
+2022-04-13 18:39:14,728 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] end getUsuarios
+2022-04-13 18:39:14,729 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-1] end getUsuarios
+2022-04-13 18:41:23,156 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-8] begin getUsuarios
+2022-04-13 18:41:23,157 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-8] end getUsuarios
+2022-04-13 18:41:23,157 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] begin getUsuarios
+2022-04-13 18:41:23,157 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] end getUsuarios
+2022-04-13 18:45:21,410 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] begin getUsuarios
+2022-04-13 18:45:21,410 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] begin getUsuarios
+2022-04-13 18:45:21,411 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] end getUsuarios
+2022-04-13 18:45:21,411 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] end getUsuarios
+2022-04-13 18:58:17,975 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] begin getUsuarios
+2022-04-13 18:58:17,975 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-10] begin getUsuarios
+2022-04-13 18:58:17,977 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] end getUsuarios
+2022-04-13 18:58:17,977 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-10] end getUsuarios
+2022-04-13 19:01:43,215 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-6] begin getUsuarios
+2022-04-13 19:01:43,215 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-5] begin getUsuarios
+2022-04-13 19:01:43,216 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-6] end getUsuarios
+2022-04-13 19:01:43,216 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-5] end getUsuarios
+2022-04-13 19:03:04,323 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-1] begin getUsuarios
+2022-04-13 19:03:04,324 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] begin getUsuarios
+2022-04-13 19:03:04,324 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-1] end getUsuarios
+2022-04-13 19:03:04,325 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] end getUsuarios
+2022-04-13 19:10:36,434 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] begin getUsuarios
+2022-04-13 19:10:36,434 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-8] begin getUsuarios
+2022-04-13 19:10:36,435 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-8] end getUsuarios
+2022-04-13 19:10:36,435 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] end getUsuarios
+2022-04-13 19:12:44,650 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] begin getUsuarios
+2022-04-13 19:12:44,650 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] begin getUsuarios
+2022-04-13 19:12:44,651 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] end getUsuarios
+2022-04-13 19:12:44,651 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] end getUsuarios
+2022-04-13 19:13:38,360 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-10] begin getUsuarios
+2022-04-13 19:13:38,360 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] begin getUsuarios
+2022-04-13 19:13:38,360 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-10] end getUsuarios
+2022-04-13 19:13:38,360 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] end getUsuarios
+2022-04-13 19:15:06,552 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-6] begin getUsuarios
+2022-04-13 19:15:06,552 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-5] begin getUsuarios
+2022-04-13 19:15:06,553 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-5] end getUsuarios
+2022-04-13 19:15:06,553 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-6] end getUsuarios
+2022-04-13 19:17:24,653 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-1] begin getUsuarios
+2022-04-13 19:17:24,653 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] begin getUsuarios
+2022-04-13 19:17:24,654 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] end getUsuarios
+2022-04-13 19:17:24,654 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-1] end getUsuarios
+2022-04-13 19:47:08,493 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] begin getUsuarios
+2022-04-13 19:47:08,494 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] end getUsuarios
+2022-04-13 19:47:08,494 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-8] begin getUsuarios
+2022-04-13 19:47:08,495 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-8] end getUsuarios
+2022-04-13 20:00:30,918 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] begin getUsuarios
+2022-04-13 20:00:30,918 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] begin getUsuarios
+2022-04-13 20:00:30,919 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] end getUsuarios
+2022-04-13 20:00:30,919 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] end getUsuarios
+2022-04-13 20:04:28,996 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] begin getUsuarios
+2022-04-13 20:04:28,998 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-10] begin getUsuarios
+2022-04-13 20:04:28,998 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-10] end getUsuarios
+2022-04-13 20:04:28,998 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] end getUsuarios
+2022-04-13 20:07:22,324 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-5] begin getUsuarios
+2022-04-13 20:07:22,325 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-5] end getUsuarios
+2022-04-13 20:07:22,335 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] begin getUsuarios
+2022-04-13 20:07:22,336 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] end getUsuarios
+2022-04-13 20:07:32,485 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-10] begin getUsuarios
+2022-04-13 20:07:32,486 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-10] end getUsuarios
+2022-04-13 20:08:21,556 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-1] begin getUsuarios
+2022-04-13 20:08:21,557 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-1] end getUsuarios
+2022-04-13 20:09:56,023 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] begin getUsuarios
+2022-04-13 20:09:56,024 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] end getUsuarios
+2022-04-13 20:09:56,027 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-8] begin getUsuarios
+2022-04-13 20:09:56,028 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-8] end getUsuarios
+2022-04-13 20:10:04,866 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-1] begin getUsuarios
+2022-04-13 20:10:04,867 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-1] end getUsuarios
+2022-04-13 20:11:04,190 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-6] begin getUsuarios
+2022-04-13 20:11:04,191 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-6] end getUsuarios
+2022-04-13 20:11:04,193 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] begin getUsuarios
+2022-04-13 20:11:04,194 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] end getUsuarios
+2022-04-13 20:11:15,918 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] begin modifyUsuario
+2022-04-13 20:11:15,988 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] end modifyUsuario
+2022-04-13 20:11:18,469 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] begin getUsuarios
+2022-04-13 20:11:18,470 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] end getUsuarios
+2022-04-13 20:11:30,161 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] begin removeUsuario
+2022-04-13 20:11:30,161 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] end removeUsuario
+2022-04-13 20:11:30,182 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-5] begin getUsuarios
+2022-04-13 20:11:30,183 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-5] end getUsuarios
+2022-04-13 20:11:34,792 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] begin getUsuarios
+2022-04-13 20:11:34,794 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] end getUsuarios
+2022-04-13 20:11:34,801 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-5] begin getUsuarios
+2022-04-13 20:11:34,802 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-5] end getUsuarios
+2022-04-13 20:11:58,857 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-1] begin getUsuarios
+2022-04-13 20:11:58,858 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-1] end getUsuarios
+2022-04-13 20:11:58,860 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] begin getUsuarios
+2022-04-13 20:11:58,860 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] end getUsuarios
+2022-04-13 20:12:05,213 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] begin removeUsuario
+2022-04-13 20:12:05,214 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] end removeUsuario
+2022-04-13 20:12:05,246 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-5] begin getUsuarios
+2022-04-13 20:12:05,247 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-5] end getUsuarios

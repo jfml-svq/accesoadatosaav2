@@ -8,6 +8,8 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.PositiveOrZero;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,12 +21,17 @@ public class Camion {
     @Id
     private String id;
     @Field
+    @NotNull
     private String matricula;
     @Field
+    @NotNull
     private String modelo;
     @Field
+    @NotNull
     private String marca;
     @Field
+    @PositiveOrZero
+    @NotNull
     private int gasolina;
 
     /*@OneToOne(mappedBy = "camion")

@@ -1,28 +1,87 @@
-2022-04-05 12:43:23,359 INFO org.springframework.boot.StartupInfoLogger [main] Starting Accesoadatosaav2Application using Java 11.0.11 on DESKTOP-BU39U52 with PID 20368 (C:\Users\Jose\Desktop\accesoadatosaav2\target\classes started by Jose in C:\Users\Jose\Desktop\accesoadatosaav2)
-2022-04-05 12:43:23,359 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
-2022-04-05 12:43:23,364 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2022-04-05 12:43:24,098 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-04-05 12:43:24,099 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-04-05 12:43:24,147 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.CamionRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:43:24,153 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.ConductorRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:43:24,159 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.PaqueteRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:43:24,165 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.UsuarioRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:43:24,167 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 59 ms. Found 0 JPA repository interfaces.
-2022-04-05 12:43:24,192 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-04-05 12:43:24,192 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
-2022-04-05 12:43:24,245 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 52 ms. Found 4 Reactive MongoDB repository interfaces.
-2022-04-05 12:43:25,050 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2022-04-05 12:43:25,066 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2022-04-05 12:43:25,066 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2022-04-05 12:43:25,066 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-05 12:43:25,309 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2022-04-05 12:43:25,309 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1890 ms
-2022-04-05 12:43:25,408 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
-2022-04-05 12:43:25,411 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
-2022-04-05 12:43:25,430 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+2022-04-15 19:33:24,731 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-04-15 19:33:24,734 INFO org.springframework.boot.StartupInfoLogger [main] Starting Accesoadatosaav2Application using Java 11.0.11 on DESKTOP-BU39U52 with PID 3500 (C:\Users\Jose\Desktop\accesoadatosaav2\target\classes started by Jose in C:\Users\Jose\Desktop\accesoadatosaav2)
+2022-04-15 19:33:24,739 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-04-15 19:33:25,660 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 19:33:25,661 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-15 19:33:25,718 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.CamionRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 19:33:25,723 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.ConductorRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 19:33:25,728 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.PaqueteRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 19:33:25,732 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.UsuarioRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 19:33:25,733 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 57 ms. Found 0 JPA repository interfaces.
+2022-04-15 19:33:25,782 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 19:33:25,782 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-04-15 19:33:25,846 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 63 ms. Found 4 Reactive MongoDB repository interfaces.
+2022-04-15 19:33:26,739 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-04-15 19:33:26,752 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-15 19:33:26,753 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-04-15 19:33:26,753 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-15 19:33:26,957 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-04-15 19:33:26,957 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2161 ms
+2022-04-15 19:33:27,077 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-04-15 19:33:27,209 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-04-15 19:33:27,263 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-15 19:33:27,323 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-15 19:33:27,519 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-15 19:33:27,683 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-15 19:33:27,962 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-15 19:33:27,976 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-15 19:33:28,415 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-15 19:33:28,970 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259ac680bb58c7080b40a1d', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:340}] to localhost:27017
+2022-04-15 19:33:28,970 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='6259ac680bb58c7080b40a1d', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:339}] to localhost:27017
+2022-04-15 19:33:28,971 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259ac680bb58c7080b40a1d', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=78374701}
+2022-04-15 19:33:29,038 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-15 19:33:29,325 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-15 19:33:29,338 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-15 19:33:29,365 INFO org.springframework.boot.StartupInfoLogger [main] Started Accesoadatosaav2Application in 5.11 seconds (JVM running for 6.056)
+2022-04-15 19:33:35,735 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-15 19:33:35,736 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-04-15 19:33:35,738 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 2 ms
+2022-04-15 19:42:43,891 INFO org.springframework.boot.StartupInfoLogger [main] Starting Accesoadatosaav2Application using Java 11.0.11 on DESKTOP-BU39U52 with PID 19400 (C:\Users\Jose\Desktop\accesoadatosaav2\target\classes started by Jose in C:\Users\Jose\Desktop\accesoadatosaav2)
+2022-04-15 19:42:43,890 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-04-15 19:42:43,895 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-04-15 19:42:44,686 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 19:42:44,687 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-15 19:42:44,730 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.CamionRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 19:42:44,732 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.ConductorRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 19:42:44,735 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.PaqueteRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 19:42:44,737 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.UsuarioRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 19:42:44,739 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 41 ms. Found 0 JPA repository interfaces.
+2022-04-15 19:42:44,771 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 19:42:44,771 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-04-15 19:42:44,827 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 55 ms. Found 4 Reactive MongoDB repository interfaces.
+2022-04-15 19:42:45,616 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-04-15 19:42:45,627 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-15 19:42:45,628 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-04-15 19:42:45,628 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-15 19:42:45,863 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-04-15 19:42:45,863 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1918 ms
+2022-04-15 19:42:45,986 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-04-15 19:42:46,116 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-04-15 19:42:46,169 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-15 19:42:46,226 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-15 19:42:46,374 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-15 19:42:46,500 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-15 19:42:46,722 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-15 19:42:46,733 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-15 19:42:47,042 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-15 19:42:47,616 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='6259ae97956d2033574fb7f5', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:342}] to localhost:27017
+2022-04-15 19:42:47,616 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259ae97956d2033574fb7f5', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:341}] to localhost:27017
+2022-04-15 19:42:47,617 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259ae97956d2033574fb7f5', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=88782900}
+2022-04-15 19:42:47,687 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-15 19:42:48,000 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-15 19:42:48,003 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022-04-15 19:42:50,131 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-15 19:42:50,133 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [main] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-04-15 19:42:50,139 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2022-04-15 19:42:50,144 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2022-04-15 19:42:50,146 INFO org.apache.juli.logging.DirectJDKLog [main] Pausing ProtocolHandler ["http-nio-8080"]
+2022-04-15 19:42:50,147 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2022-04-15 19:42:50,154 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping ProtocolHandler ["http-nio-8080"]
+2022-04-15 19:42:50,155 INFO org.apache.juli.logging.DirectJDKLog [main] Destroying ProtocolHandler ["http-nio-8080"]
+2022-04-15 19:42:50,164 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-05 12:43:25,454 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+2022-04-15 19:42:50,188 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
 
 ***************************
 APPLICATION FAILED TO START
@@ -30,231 +89,489 @@ APPLICATION FAILED TO START
 
 Description:
 
-Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
-
-Reason: Failed to determine a suitable driver class
-
+Web server failed to start. Port 8080 was already in use.
 
 Action:
 
-Consider the following:
-	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
-	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
 
-2022-04-05 12:44:14,554 INFO org.springframework.boot.StartupInfoLogger [main] Starting Accesoadatosaav2Application using Java 11.0.11 on DESKTOP-BU39U52 with PID 4932 (C:\Users\Jose\Desktop\accesoadatosaav2\target\classes started by Jose in C:\Users\Jose\Desktop\accesoadatosaav2)
-2022-04-05 12:44:14,558 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2022-04-05 12:44:14,559 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
-2022-04-05 12:44:15,363 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-04-05 12:44:15,364 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-04-05 12:44:15,407 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.CamionRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:44:15,410 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.ConductorRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:44:15,412 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.PaqueteRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:44:15,415 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.UsuarioRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:44:15,416 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 42 ms. Found 0 JPA repository interfaces.
-2022-04-05 12:44:15,441 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-04-05 12:44:15,441 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
-2022-04-05 12:44:15,494 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 52 ms. Found 4 Reactive MongoDB repository interfaces.
-2022-04-05 12:44:16,386 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2022-04-05 12:44:16,400 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2022-04-05 12:44:16,401 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2022-04-05 12:44:16,401 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-05 12:44:16,642 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2022-04-05 12:44:16,642 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2031 ms
-2022-04-05 12:44:16,758 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
-2022-04-05 12:44:16,761 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
-2022-04-05 12:44:16,786 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-05 12:44:16,814 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
-
-Reason: Failed to determine a suitable driver class
-
-
-Action:
-
-Consider the following:
-	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
-	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
-
-2022-04-05 12:45:51,048 INFO org.springframework.boot.StartupInfoLogger [main] Starting Accesoadatosaav2Application using Java 11.0.11 on DESKTOP-BU39U52 with PID 3516 (C:\Users\Jose\Desktop\accesoadatosaav2\target\classes started by Jose in C:\Users\Jose\Desktop\accesoadatosaav2)
-2022-04-05 12:45:51,051 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
-2022-04-05 12:45:51,052 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2022-04-05 12:45:51,829 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-04-05 12:45:51,830 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-04-05 12:45:51,885 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.CamionRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:45:51,889 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.ConductorRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:45:51,894 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.PaqueteRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:45:51,900 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.UsuarioRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:45:51,902 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 53 ms. Found 0 JPA repository interfaces.
-2022-04-05 12:45:51,934 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-04-05 12:45:51,935 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
-2022-04-05 12:45:51,988 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 52 ms. Found 4 Reactive MongoDB repository interfaces.
-2022-04-05 12:45:52,830 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2022-04-05 12:45:52,842 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2022-04-05 12:45:52,843 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2022-04-05 12:45:52,843 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-05 12:45:53,097 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2022-04-05 12:45:53,098 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1999 ms
-2022-04-05 12:45:53,209 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
-2022-04-05 12:45:53,213 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
-2022-04-05 12:45:53,232 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-05 12:45:53,256 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
-
-Reason: Failed to determine a suitable driver class
-
-
-Action:
-
-Consider the following:
-	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
-	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
-
-2022-04-05 12:48:18,596 INFO org.springframework.boot.StartupInfoLogger [main] Starting Accesoadatosaav2Application using Java 11.0.11 on DESKTOP-BU39U52 with PID 13864 (C:\Users\Jose\Desktop\accesoadatosaav2\target\classes started by Jose in C:\Users\Jose\Desktop\accesoadatosaav2)
-2022-04-05 12:48:18,599 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2022-04-05 12:48:18,599 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
-2022-04-05 12:48:19,426 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-04-05 12:48:19,427 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-04-05 12:48:19,464 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.CamionRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:48:19,466 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.ConductorRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:48:19,468 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.PaqueteRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:48:19,471 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.UsuarioRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:48:19,472 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 36 ms. Found 0 JPA repository interfaces.
-2022-04-05 12:48:19,499 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-04-05 12:48:19,499 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
-2022-04-05 12:48:19,570 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 70 ms. Found 4 Reactive MongoDB repository interfaces.
-2022-04-05 12:48:20,439 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2022-04-05 12:48:20,452 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2022-04-05 12:48:20,453 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2022-04-05 12:48:20,453 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-05 12:48:20,683 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2022-04-05 12:48:20,684 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2033 ms
-2022-04-05 12:48:20,791 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
-2022-04-05 12:48:20,794 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
-2022-04-05 12:48:20,813 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-05 12:48:20,838 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
-
-Reason: Failed to determine a suitable driver class
-
-
-Action:
-
-Consider the following:
-	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
-	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
-
-2022-04-05 12:51:05,566 INFO org.springframework.boot.StartupInfoLogger [main] Starting Accesoadatosaav2Application using Java 11.0.11 on DESKTOP-BU39U52 with PID 20960 (C:\Users\Jose\Desktop\accesoadatosaav2\target\classes started by Jose in C:\Users\Jose\Desktop\accesoadatosaav2)
-2022-04-05 12:51:05,569 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2022-04-05 12:51:05,572 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
-2022-04-05 12:51:06,344 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-04-05 12:51:06,344 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-04-05 12:51:06,386 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.CamionRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:51:06,389 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.ConductorRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:51:06,392 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.PaqueteRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:51:06,396 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.UsuarioRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:51:06,397 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 43 ms. Found 0 JPA repository interfaces.
-2022-04-05 12:51:06,428 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-04-05 12:51:06,428 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
-2022-04-05 12:51:06,512 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 83 ms. Found 4 Reactive MongoDB repository interfaces.
-2022-04-05 12:51:07,499 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2022-04-05 12:51:07,512 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2022-04-05 12:51:07,513 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2022-04-05 12:51:07,513 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-05 12:51:07,702 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2022-04-05 12:51:07,703 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2084 ms
-2022-04-05 12:51:07,799 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
-2022-04-05 12:51:07,802 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
-2022-04-05 12:51:07,823 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-05 12:51:07,847 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
-
-Reason: Failed to determine a suitable driver class
-
-
-Action:
-
-Consider the following:
-	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
-	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
-
-2022-04-05 12:52:43,592 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
-2022-04-05 12:52:43,603 INFO org.springframework.boot.StartupInfoLogger [main] Starting Accesoadatosaav2Application using Java 11.0.11 on DESKTOP-BU39U52 with PID 14388 (C:\Users\Jose\Desktop\accesoadatosaav2\target\classes started by Jose in C:\Users\Jose\Desktop\accesoadatosaav2)
-2022-04-05 12:52:43,605 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2022-04-05 12:52:44,403 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-04-05 12:52:44,404 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-04-05 12:52:44,458 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.CamionRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:52:44,461 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.ConductorRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:52:44,465 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.PaqueteRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:52:44,468 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.UsuarioRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
-2022-04-05 12:52:44,469 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 55 ms. Found 0 JPA repository interfaces.
-2022-04-05 12:52:44,495 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-04-05 12:52:44,496 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
-2022-04-05 12:52:44,545 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 48 ms. Found 4 Reactive MongoDB repository interfaces.
-2022-04-05 12:52:45,491 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2022-04-05 12:52:45,503 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
-2022-04-05 12:52:45,504 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2022-04-05 12:52:45,504 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-05 12:52:45,755 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2022-04-05 12:52:45,756 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2102 ms
-2022-04-05 12:52:45,912 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2022-04-05 12:52:46,078 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2022-04-05 12:52:46,133 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-04-05 12:52:46,191 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-04-05 12:52:46,377 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-04-05 12:52:46,507 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-04-05 12:52:46,783 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-04-05 12:52:46,795 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-04-05 12:52:47,097 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2022-04-05 12:52:47,725 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-04-05 12:52:47,741 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='624c1f7f2df55955db3bd9e0', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:82}] to localhost:27017
-2022-04-05 12:52:47,741 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='624c1f7f2df55955db3bd9e0', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:81}] to localhost:27017
-2022-04-05 12:52:47,742 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='624c1f7f2df55955db3bd9e0', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=76501100}
-2022-04-05 12:52:48,055 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
-2022-04-05 12:52:48,066 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2022-04-05 12:52:48,076 INFO org.springframework.boot.StartupInfoLogger [main] Started Accesoadatosaav2Application in 4.942 seconds (JVM running for 5.611)
-2022-04-05 12:52:57,111 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-05 12:52:57,111 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2022-04-05 12:52:57,112 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
-2022-04-05 12:52:57,213 INFO com.josefco.accesoadatosaav2.controller.ConductorController [http-nio-8080-exec-1] begin findAllConductores
-2022-04-05 12:52:57,243 INFO com.josefco.accesoadatosaav2.controller.ConductorController [http-nio-8080-exec-1] end findAllConductores
-2022-04-05 12:52:57,418 INFO com.mongodb.diagnostics.logging.SLF4JLogger [nioEventLoopGroup-2-3] Opened connection [connectionId{localValue:3, serverValue:83}] to localhost:27017
-2022-04-05 12:53:05,140 INFO com.josefco.accesoadatosaav2.controller.ConductorController [http-nio-8080-exec-4] begin saveCondutor
-2022-04-05 12:53:05,160 INFO com.josefco.accesoadatosaav2.controller.ConductorController [http-nio-8080-exec-4] end saveCondutor
-2022-04-05 12:53:09,128 INFO com.josefco.accesoadatosaav2.controller.ConductorController [http-nio-8080-exec-6] begin findAllConductores
-2022-04-05 12:53:09,129 INFO com.josefco.accesoadatosaav2.controller.ConductorController [http-nio-8080-exec-6] end findAllConductores
+2022-04-15 19:43:25,832 INFO org.springframework.boot.StartupInfoLogger [main] Starting Accesoadatosaav2Application using Java 11.0.11 on DESKTOP-BU39U52 with PID 13460 (C:\Users\Jose\Desktop\accesoadatosaav2\target\classes started by Jose in C:\Users\Jose\Desktop\accesoadatosaav2)
+2022-04-15 19:43:25,831 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-04-15 19:43:25,835 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-04-15 19:43:26,599 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 19:43:26,600 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-15 19:43:26,643 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.CamionRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 19:43:26,646 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.ConductorRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 19:43:26,649 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.PaqueteRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 19:43:26,651 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.UsuarioRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 19:43:26,652 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 41 ms. Found 0 JPA repository interfaces.
+2022-04-15 19:43:26,685 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 19:43:26,685 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-04-15 19:43:26,742 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 56 ms. Found 4 Reactive MongoDB repository interfaces.
+2022-04-15 19:43:27,602 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-04-15 19:43:27,618 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-15 19:43:27,619 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-04-15 19:43:27,619 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-15 19:43:27,803 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-04-15 19:43:27,803 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1917 ms
+2022-04-15 19:43:27,925 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-04-15 19:43:28,051 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-04-15 19:43:28,103 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-15 19:43:28,158 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-15 19:43:28,321 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-15 19:43:28,487 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-15 19:43:28,776 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-15 19:43:28,789 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-15 19:43:29,102 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-15 19:43:29,664 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='6259aec154cd763e4edc1d10', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:344}] to localhost:27017
+2022-04-15 19:43:29,664 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259aec154cd763e4edc1d10', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:343}] to localhost:27017
+2022-04-15 19:43:29,665 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259aec154cd763e4edc1d10', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=70893000}
+2022-04-15 19:43:29,690 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-15 19:43:29,991 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-15 19:43:30,003 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-15 19:43:30,033 INFO org.springframework.boot.StartupInfoLogger [main] Started Accesoadatosaav2Application in 4.635 seconds (JVM running for 5.349)
+2022-04-15 19:43:40,459 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-15 19:43:40,460 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-04-15 19:43:40,463 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 3 ms
+2022-04-15 19:43:40,590 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] begin getUsuario
+2022-04-15 19:43:40,629 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] end getUsuario
+2022-04-15 19:43:40,764 INFO com.mongodb.diagnostics.logging.SLF4JLogger [nioEventLoopGroup-2-3] Opened connection [connectionId{localValue:3, serverValue:345}] to localhost:27017
+2022-04-15 19:43:40,819 ERROR com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] Usuario no encontrado
+com.josefco.accesoadatosaav2.exception.UsuarioNoEncontradoException: Usuario no encontrado
+	at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:82)
+	at reactor.core.publisher.MonoUsingWhen$MonoUsingWhenSubscriber.deferredComplete(MonoUsingWhen.java:270)
+	at reactor.core.publisher.FluxUsingWhen$CommitInner.onComplete(FluxUsingWhen.java:527)
+	at reactor.core.publisher.Operators.complete(Operators.java:137)
+	at reactor.core.publisher.MonoEmpty.subscribe(MonoEmpty.java:46)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+	at reactor.core.publisher.FluxUsingWhen$UsingWhenSubscriber.onComplete(FluxUsingWhen.java:384)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onComplete(Operators.java:2058)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondComplete(MonoFlatMap.java:196)
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onComplete(MonoFlatMap.java:268)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onComplete(MonoFlatMap.java:181)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondComplete(MonoFlatMap.java:196)
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onComplete(MonoFlatMap.java:268)
+	at reactor.core.publisher.MonoCreate$DefaultMonoSink.success(MonoCreate.java:133)
+	at com.mongodb.reactivestreams.client.internal.BatchCursorPublisher.lambda$first$0(BatchCursorPublisher.java:110)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:289)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+	at reactor.core.publisher.MonoCreate$DefaultMonoSink.success(MonoCreate.java:133)
+	at com.mongodb.reactivestreams.client.internal.MongoOperationPublisher.lambda$sinkToCallback$30(MongoOperationPublisher.java:547)
+	at com.mongodb.internal.operation.AsyncQueryBatchCursor.next(AsyncQueryBatchCursor.java:172)
+	at com.mongodb.reactivestreams.client.internal.BatchCursor.lambda$next$0(BatchCursor.java:35)
+	at reactor.core.publisher.MonoCreate.subscribe(MonoCreate.java:57)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+	at reactor.core.publisher.Mono.subscribeWith(Mono.java:4515)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4232)
+	at com.mongodb.reactivestreams.client.internal.BatchCursorPublisher.lambda$first$1(BatchCursorPublisher.java:115)
+	at reactor.core.publisher.MonoCreate.subscribe(MonoCreate.java:57)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:157)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:120)
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onNext(MonoFlatMap.java:249)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+	at reactor.core.publisher.MonoCreate$DefaultMonoSink.success(MonoCreate.java:165)
+	at com.mongodb.reactivestreams.client.internal.MongoOperationPublisher.lambda$sinkToCallback$30(MongoOperationPublisher.java:549)
+	at com.mongodb.reactivestreams.client.internal.OperationExecutorImpl.lambda$execute$2(OperationExecutorImpl.java:92)
+	at com.mongodb.internal.async.ErrorHandlingResultCallback.onResult(ErrorHandlingResultCallback.java:48)
+	at com.mongodb.internal.async.function.AsyncCallbackSupplier.lambda$whenComplete$1(AsyncCallbackSupplier.java:95)
+	at com.mongodb.internal.async.function.RetryingAsyncCallbackSupplier$RetryingCallback.onResult(RetryingAsyncCallbackSupplier.java:114)
+	at com.mongodb.internal.async.ErrorHandlingResultCallback.onResult(ErrorHandlingResultCallback.java:48)
+	at com.mongodb.internal.async.function.AsyncCallbackSupplier.lambda$whenComplete$1(AsyncCallbackSupplier.java:95)
+	at com.mongodb.internal.async.ErrorHandlingResultCallback.onResult(ErrorHandlingResultCallback.java:48)
+	at com.mongodb.internal.async.function.AsyncCallbackSupplier.lambda$whenComplete$1(AsyncCallbackSupplier.java:95)
+	at com.mongodb.internal.operation.FindOperation$2.onResult(FindOperation.java:762)
+	at com.mongodb.internal.operation.CommandOperationHelper.lambda$transformingReadCallback$10(CommandOperationHelper.java:329)
+	at com.mongodb.internal.async.ErrorHandlingResultCallback.onResult(ErrorHandlingResultCallback.java:48)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor$2.onResult(DefaultServer.java:280)
+	at com.mongodb.internal.async.ErrorHandlingResultCallback.onResult(ErrorHandlingResultCallback.java:48)
+	at com.mongodb.internal.connection.CommandProtocolImpl$1.onResult(CommandProtocolImpl.java:84)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection$1.onResult(DefaultConnectionPool.java:687)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection$2.onResult(UsageTrackingInternalConnection.java:159)
+	at com.mongodb.internal.async.ErrorHandlingResultCallback.onResult(ErrorHandlingResultCallback.java:48)
+	at com.mongodb.internal.connection.InternalStreamConnection$2$1.onResult(InternalStreamConnection.java:526)
+	at com.mongodb.internal.connection.InternalStreamConnection$2$1.onResult(InternalStreamConnection.java:503)
+	at com.mongodb.internal.connection.InternalStreamConnection$MessageHeaderCallback$MessageCallback.onResult(InternalStreamConnection.java:815)
+	at com.mongodb.internal.connection.InternalStreamConnection$MessageHeaderCallback$MessageCallback.onResult(InternalStreamConnection.java:782)
+	at com.mongodb.internal.connection.InternalStreamConnection$5.completed(InternalStreamConnection.java:650)
+	at com.mongodb.internal.connection.InternalStreamConnection$5.completed(InternalStreamConnection.java:647)
+	at com.mongodb.connection.netty.NettyStream.readAsync(NettyStream.java:319)
+	at com.mongodb.connection.netty.NettyStream.readAsync(NettyStream.java:266)
+	at com.mongodb.internal.connection.InternalStreamConnection.readAsync(InternalStreamConnection.java:647)
+	at com.mongodb.internal.connection.InternalStreamConnection.access$600(InternalStreamConnection.java:86)
+	at com.mongodb.internal.connection.InternalStreamConnection$MessageHeaderCallback.onResult(InternalStreamConnection.java:772)
+	at com.mongodb.internal.connection.InternalStreamConnection$MessageHeaderCallback.onResult(InternalStreamConnection.java:757)
+	at com.mongodb.internal.connection.InternalStreamConnection$5.completed(InternalStreamConnection.java:650)
+	at com.mongodb.internal.connection.InternalStreamConnection$5.completed(InternalStreamConnection.java:647)
+	at com.mongodb.connection.netty.NettyStream.readAsync(NettyStream.java:319)
+	at com.mongodb.connection.netty.NettyStream.handleReadResponse(NettyStream.java:347)
+	at com.mongodb.connection.netty.NettyStream.access$1100(NettyStream.java:105)
+	at com.mongodb.connection.netty.NettyStream$InboundBufferHandler.channelRead0(NettyStream.java:421)
+	at com.mongodb.connection.netty.NettyStream$InboundBufferHandler.channelRead0(NettyStream.java:418)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-04-15 19:43:53,917 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] begin getUsuario
+2022-04-15 19:43:53,918 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] end getUsuario
+2022-04-15 19:54:07,140 INFO org.springframework.boot.StartupInfoLogger [main] Starting Accesoadatosaav2Application using Java 11.0.11 on DESKTOP-BU39U52 with PID 10624 (C:\Users\Jose\Desktop\accesoadatosaav2\target\classes started by Jose in C:\Users\Jose\Desktop\accesoadatosaav2)
+2022-04-15 19:54:07,141 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-04-15 19:54:07,144 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-04-15 19:54:07,928 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 19:54:07,929 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-15 19:54:07,968 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.CamionRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 19:54:07,971 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.ConductorRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 19:54:07,974 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.PaqueteRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 19:54:07,977 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.UsuarioRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 19:54:07,978 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 40 ms. Found 0 JPA repository interfaces.
+2022-04-15 19:54:08,006 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 19:54:08,007 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-04-15 19:54:08,063 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 55 ms. Found 4 Reactive MongoDB repository interfaces.
+2022-04-15 19:54:08,852 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-04-15 19:54:08,865 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-15 19:54:08,865 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-04-15 19:54:08,866 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-15 19:54:09,024 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-04-15 19:54:09,024 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1827 ms
+2022-04-15 19:54:09,133 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-04-15 19:54:09,253 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-04-15 19:54:09,319 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-15 19:54:09,383 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-15 19:54:09,554 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-15 19:54:09,746 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-15 19:54:10,058 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-15 19:54:10,071 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-15 19:54:10,440 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-15 19:54:11,033 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='6259b1423e231c02944be245', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:351}] to localhost:27017
+2022-04-15 19:54:11,033 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259b1423e231c02944be245', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:350}] to localhost:27017
+2022-04-15 19:54:11,034 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259b1423e231c02944be245', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=81509299}
+2022-04-15 19:54:11,099 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-15 19:54:11,373 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-15 19:54:11,386 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-15 19:54:11,397 INFO org.springframework.boot.StartupInfoLogger [main] Started Accesoadatosaav2Application in 4.701 seconds (JVM running for 5.437)
+2022-04-15 20:02:01,385 INFO org.springframework.boot.StartupInfoLogger [main] Starting Accesoadatosaav2Application using Java 11.0.11 on DESKTOP-BU39U52 with PID 17520 (C:\Users\Jose\Desktop\accesoadatosaav2\target\classes started by Jose in C:\Users\Jose\Desktop\accesoadatosaav2)
+2022-04-15 20:02:01,386 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-04-15 20:02:01,389 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-04-15 20:02:02,190 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 20:02:02,191 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-15 20:02:02,236 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.CamionRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:02:02,239 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.ConductorRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:02:02,242 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.PaqueteRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:02:02,245 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.UsuarioRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:02:02,246 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 45 ms. Found 0 JPA repository interfaces.
+2022-04-15 20:02:02,275 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 20:02:02,275 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-04-15 20:02:02,357 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 80 ms. Found 4 Reactive MongoDB repository interfaces.
+2022-04-15 20:02:03,352 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-04-15 20:02:03,364 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-15 20:02:03,365 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-04-15 20:02:03,365 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-15 20:02:03,574 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-04-15 20:02:03,574 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2135 ms
+2022-04-15 20:02:03,726 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-04-15 20:02:03,885 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-04-15 20:02:03,942 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-15 20:02:04,010 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-15 20:02:04,171 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-15 20:02:04,312 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-15 20:02:04,563 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-15 20:02:04,578 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-15 20:02:04,911 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-15 20:02:05,544 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259b31c1b471c37d45098b9', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:355}] to localhost:27017
+2022-04-15 20:02:05,544 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='6259b31c1b471c37d45098b9', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:356}] to localhost:27017
+2022-04-15 20:02:05,545 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259b31c1b471c37d45098b9', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=75706200}
+2022-04-15 20:02:05,584 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-15 20:02:05,926 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-15 20:02:05,942 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-15 20:02:05,985 INFO org.springframework.boot.StartupInfoLogger [main] Started Accesoadatosaav2Application in 5.071 seconds (JVM running for 5.874)
+2022-04-15 20:02:15,420 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-15 20:02:15,420 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-04-15 20:02:15,421 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2022-04-15 20:02:15,554 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] begin getUsuario
+2022-04-15 20:02:15,612 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] end getUsuario
+2022-04-15 20:02:15,750 INFO com.mongodb.diagnostics.logging.SLF4JLogger [nioEventLoopGroup-2-3] Opened connection [connectionId{localValue:3, serverValue:357}] to localhost:27017
+2022-04-15 20:02:21,230 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] begin getUsuario
+2022-04-15 20:02:21,231 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] end getUsuario
+2022-04-15 20:02:21,242 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-5] 404: User not found
+2022-04-15 20:02:40,978 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] begin getUsuario
+2022-04-15 20:02:40,979 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-7] end getUsuario
+2022-04-15 20:02:47,992 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] begin getUsuario
+2022-04-15 20:02:47,993 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-9] end getUsuario
+2022-04-15 20:02:47,999 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-10] 404: User not found
+2022-04-15 20:06:51,333 INFO org.springframework.boot.StartupInfoLogger [main] Starting Accesoadatosaav2Application using Java 11.0.11 on DESKTOP-BU39U52 with PID 21828 (C:\Users\Jose\Desktop\accesoadatosaav2\target\classes started by Jose in C:\Users\Jose\Desktop\accesoadatosaav2)
+2022-04-15 20:06:51,332 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-04-15 20:06:51,337 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-04-15 20:06:52,180 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 20:06:52,181 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-15 20:06:52,245 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.CamionRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:06:52,248 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.ConductorRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:06:52,251 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.PaqueteRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:06:52,254 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.UsuarioRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:06:52,255 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 61 ms. Found 0 JPA repository interfaces.
+2022-04-15 20:06:52,297 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 20:06:52,297 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-04-15 20:06:52,380 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 82 ms. Found 4 Reactive MongoDB repository interfaces.
+2022-04-15 20:06:53,201 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-04-15 20:06:53,214 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-15 20:06:53,215 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-04-15 20:06:53,215 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-15 20:06:53,527 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-04-15 20:06:53,528 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2145 ms
+2022-04-15 20:06:53,716 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-04-15 20:06:53,869 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-04-15 20:06:53,948 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-15 20:06:54,013 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-15 20:06:54,254 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-15 20:06:54,417 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-15 20:06:54,751 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-15 20:06:54,774 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-15 20:06:55,125 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-15 20:06:55,727 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='6259b43fa3085542c0909273', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:359}] to localhost:27017
+2022-04-15 20:06:55,727 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259b43fa3085542c0909273', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:358}] to localhost:27017
+2022-04-15 20:06:55,728 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259b43fa3085542c0909273', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=72590501}
+2022-04-15 20:06:55,761 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-15 20:06:56,103 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-15 20:06:56,117 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-15 20:06:56,129 INFO org.springframework.boot.StartupInfoLogger [main] Started Accesoadatosaav2Application in 5.195 seconds (JVM running for 5.925)
+2022-04-15 20:07:01,840 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-15 20:07:01,840 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-04-15 20:07:01,841 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2022-04-15 20:07:01,961 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] begin getUsuario
+2022-04-15 20:07:01,995 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] end getUsuario
+2022-04-15 20:07:02,119 INFO com.mongodb.diagnostics.logging.SLF4JLogger [nioEventLoopGroup-2-3] Opened connection [connectionId{localValue:3, serverValue:360}] to localhost:27017
+2022-04-15 20:07:02,175 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-3] 404: User not found
+2022-04-15 20:07:07,192 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] begin getUsuario
+2022-04-15 20:07:07,193 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] end getUsuario
+2022-04-15 20:15:56,559 INFO org.springframework.boot.StartupInfoLogger [main] Starting Accesoadatosaav2Application using Java 11.0.11 on DESKTOP-BU39U52 with PID 17568 (C:\Users\Jose\Desktop\accesoadatosaav2\target\classes started by Jose in C:\Users\Jose\Desktop\accesoadatosaav2)
+2022-04-15 20:15:56,557 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-04-15 20:15:56,562 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-04-15 20:15:57,370 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 20:15:57,371 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-15 20:15:57,416 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.CamionRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:15:57,419 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.ConductorRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:15:57,422 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.PaqueteRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:15:57,425 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.UsuarioRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:15:57,426 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 43 ms. Found 0 JPA repository interfaces.
+2022-04-15 20:15:57,455 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 20:15:57,455 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-04-15 20:15:57,511 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 54 ms. Found 4 Reactive MongoDB repository interfaces.
+2022-04-15 20:15:58,279 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-04-15 20:15:58,290 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-15 20:15:58,291 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-04-15 20:15:58,292 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-15 20:15:58,471 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-04-15 20:15:58,472 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1858 ms
+2022-04-15 20:15:58,584 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-04-15 20:15:58,697 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-04-15 20:15:58,746 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-15 20:15:58,795 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-15 20:15:58,936 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-15 20:15:59,055 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-15 20:15:59,269 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-15 20:15:59,281 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-15 20:15:59,514 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-15 20:16:00,042 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259b65f699d1c4a674e41ca', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:361}] to localhost:27017
+2022-04-15 20:16:00,042 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='6259b65f699d1c4a674e41ca', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:362}] to localhost:27017
+2022-04-15 20:16:00,043 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259b65f699d1c4a674e41ca', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=73182199}
+2022-04-15 20:16:00,083 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-15 20:16:00,369 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-15 20:16:00,380 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-15 20:16:00,407 INFO org.springframework.boot.StartupInfoLogger [main] Started Accesoadatosaav2Application in 4.27 seconds (JVM running for 5.035)
+2022-04-15 20:16:14,334 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-15 20:16:14,335 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-04-15 20:16:14,336 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2022-04-15 20:16:14,567 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] begin modifyUsuario
+2022-04-15 20:16:14,736 INFO com.mongodb.diagnostics.logging.SLF4JLogger [nioEventLoopGroup-2-3] Opened connection [connectionId{localValue:3, serverValue:363}] to localhost:27017
+2022-04-15 20:16:50,880 INFO org.springframework.boot.StartupInfoLogger [main] Starting Accesoadatosaav2Application using Java 11.0.11 on DESKTOP-BU39U52 with PID 5684 (C:\Users\Jose\Desktop\accesoadatosaav2\target\classes started by Jose in C:\Users\Jose\Desktop\accesoadatosaav2)
+2022-04-15 20:16:50,880 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-04-15 20:16:50,884 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-04-15 20:16:51,658 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 20:16:51,659 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-15 20:16:51,702 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.CamionRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:16:51,704 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.ConductorRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:16:51,707 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.PaqueteRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:16:51,710 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.UsuarioRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:16:51,712 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 42 ms. Found 0 JPA repository interfaces.
+2022-04-15 20:16:51,737 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 20:16:51,738 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-04-15 20:16:51,795 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 57 ms. Found 4 Reactive MongoDB repository interfaces.
+2022-04-15 20:16:52,578 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-04-15 20:16:52,590 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-15 20:16:52,590 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-04-15 20:16:52,591 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-15 20:16:52,751 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-04-15 20:16:52,751 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1815 ms
+2022-04-15 20:16:52,871 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-04-15 20:16:52,988 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-04-15 20:16:53,039 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-15 20:16:53,090 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-15 20:16:53,236 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-15 20:16:53,358 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-15 20:16:53,556 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-15 20:16:53,566 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-15 20:16:53,821 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-15 20:16:54,365 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259b695bfa91f64a2e3b542', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:364}] to localhost:27017
+2022-04-15 20:16:54,365 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='6259b695bfa91f64a2e3b542', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:365}] to localhost:27017
+2022-04-15 20:16:54,366 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259b695bfa91f64a2e3b542', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=72815999}
+2022-04-15 20:16:54,411 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-15 20:16:54,693 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-15 20:16:54,721 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-15 20:16:54,738 INFO org.springframework.boot.StartupInfoLogger [main] Started Accesoadatosaav2Application in 4.283 seconds (JVM running for 5.061)
+2022-04-15 20:17:00,867 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-15 20:17:00,867 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-04-15 20:17:00,869 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2022-04-15 20:17:01,162 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] begin modifyUsuario
+2022-04-15 20:17:01,313 INFO com.mongodb.diagnostics.logging.SLF4JLogger [nioEventLoopGroup-2-3] Opened connection [connectionId{localValue:3, serverValue:366}] to localhost:27017
+2022-04-15 20:17:12,199 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] begin getUsuarios
+2022-04-15 20:17:12,205 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] end getUsuarios
+2022-04-15 20:17:38,832 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-6] begin modifyUsuario
+2022-04-15 20:17:38,844 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-6] end modifyUsuario
+2022-04-15 20:18:12,331 INFO org.springframework.boot.StartupInfoLogger [main] Starting Accesoadatosaav2Application using Java 11.0.11 on DESKTOP-BU39U52 with PID 856 (C:\Users\Jose\Desktop\accesoadatosaav2\target\classes started by Jose in C:\Users\Jose\Desktop\accesoadatosaav2)
+2022-04-15 20:18:12,332 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-04-15 20:18:12,335 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-04-15 20:18:13,190 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 20:18:13,192 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-15 20:18:13,250 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.CamionRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:18:13,253 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.ConductorRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:18:13,256 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.PaqueteRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:18:13,259 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.UsuarioRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:18:13,260 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 52 ms. Found 0 JPA repository interfaces.
+2022-04-15 20:18:13,285 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 20:18:13,286 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-04-15 20:18:13,343 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 56 ms. Found 4 Reactive MongoDB repository interfaces.
+2022-04-15 20:18:14,217 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-04-15 20:18:14,229 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-15 20:18:14,230 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-04-15 20:18:14,230 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-15 20:18:14,469 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-04-15 20:18:14,469 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2084 ms
+2022-04-15 20:18:14,641 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-04-15 20:18:14,834 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-04-15 20:18:14,919 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-15 20:18:14,979 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-15 20:18:15,206 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-15 20:18:15,398 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-15 20:18:15,631 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-15 20:18:15,643 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-15 20:18:15,937 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-15 20:18:16,529 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259b6e753604e5d3fcde69b', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:368}] to localhost:27017
+2022-04-15 20:18:16,529 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='6259b6e753604e5d3fcde69b', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:367}] to localhost:27017
+2022-04-15 20:18:16,530 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259b6e753604e5d3fcde69b', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=73182100}
+2022-04-15 20:18:16,552 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-15 20:18:16,896 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-15 20:18:16,912 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-15 20:18:16,954 INFO org.springframework.boot.StartupInfoLogger [main] Started Accesoadatosaav2Application in 5.044 seconds (JVM running for 5.771)
+2022-04-15 20:18:23,809 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-15 20:18:23,810 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-04-15 20:18:23,811 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2022-04-15 20:18:24,014 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] begin modifyUsuario
+2022-04-15 20:18:24,187 INFO com.mongodb.diagnostics.logging.SLF4JLogger [nioEventLoopGroup-2-3] Opened connection [connectionId{localValue:3, serverValue:369}] to localhost:27017
+2022-04-15 20:18:24,298 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] end modifyUsuario
+2022-04-15 20:18:31,908 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-4] begin modifyUsuario
+2022-04-15 20:27:11,076 INFO org.springframework.boot.StartupInfoLogger [main] Starting Accesoadatosaav2Application using Java 11.0.11 on DESKTOP-BU39U52 with PID 7296 (C:\Users\Jose\Desktop\accesoadatosaav2\target\classes started by Jose in C:\Users\Jose\Desktop\accesoadatosaav2)
+2022-04-15 20:27:11,076 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-04-15 20:27:11,080 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-04-15 20:27:11,865 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 20:27:11,865 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-15 20:27:11,906 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.CamionRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:27:11,910 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.ConductorRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:27:11,912 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.PaqueteRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:27:11,915 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.UsuarioRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:27:11,916 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 41 ms. Found 0 JPA repository interfaces.
+2022-04-15 20:27:11,942 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 20:27:11,943 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-04-15 20:27:11,998 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 54 ms. Found 4 Reactive MongoDB repository interfaces.
+2022-04-15 20:27:12,875 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-04-15 20:27:12,887 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-15 20:27:12,887 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-04-15 20:27:12,888 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-15 20:27:13,059 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-04-15 20:27:13,060 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1931 ms
+2022-04-15 20:27:13,220 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-04-15 20:27:13,367 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-04-15 20:27:13,424 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-15 20:27:13,481 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-15 20:27:13,657 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-15 20:27:13,812 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-15 20:27:14,078 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-15 20:27:14,090 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-15 20:27:14,436 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-15 20:27:15,055 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='6259b9027418d857475b6392', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:370}] to localhost:27017
+2022-04-15 20:27:15,055 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259b9027418d857475b6392', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:371}] to localhost:27017
+2022-04-15 20:27:15,056 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259b9027418d857475b6392', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=89832000}
+2022-04-15 20:27:15,108 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-15 20:27:15,396 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-15 20:27:15,409 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-15 20:27:15,421 INFO org.springframework.boot.StartupInfoLogger [main] Started Accesoadatosaav2Application in 4.777 seconds (JVM running for 5.56)
+2022-04-15 20:27:28,386 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-15 20:27:28,386 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-04-15 20:27:28,387 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2022-04-15 20:27:28,502 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] begin removeUsuario
+2022-04-15 20:27:28,502 INFO com.josefco.accesoadatosaav2.controller.UsuarioController [http-nio-8080-exec-2] end removeUsuario
+2022-04-15 20:27:28,726 INFO com.mongodb.diagnostics.logging.SLF4JLogger [nioEventLoopGroup-2-3] Opened connection [connectionId{localValue:3, serverValue:372}] to localhost:27017
+2022-04-15 20:53:45,178 INFO org.springframework.boot.StartupInfoLogger [main] Starting Accesoadatosaav2Application using Java 11.0.11 on DESKTOP-BU39U52 with PID 7696 (C:\Users\Jose\Desktop\accesoadatosaav2\target\classes started by Jose in C:\Users\Jose\Desktop\accesoadatosaav2)
+2022-04-15 20:53:45,176 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-04-15 20:53:45,181 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-04-15 20:53:45,970 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 20:53:45,971 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-15 20:53:46,011 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.CamionRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:53:46,014 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.ConductorRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:53:46,016 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.PaqueteRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:53:46,019 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.josefco.accesoadatosaav2.repository.UsuarioRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-04-15 20:53:46,020 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 39 ms. Found 0 JPA repository interfaces.
+2022-04-15 20:53:46,047 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-15 20:53:46,048 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2022-04-15 20:53:46,107 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 58 ms. Found 4 Reactive MongoDB repository interfaces.
+2022-04-15 20:53:46,915 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-04-15 20:53:46,927 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-15 20:53:46,928 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-04-15 20:53:46,928 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-15 20:53:47,080 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-04-15 20:53:47,080 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1845 ms
+2022-04-15 20:53:47,194 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-04-15 20:53:47,310 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-04-15 20:53:47,359 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-15 20:53:47,408 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-15 20:53:47,550 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-15 20:53:47,668 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-15 20:53:47,863 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-15 20:53:47,872 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-15 20:53:48,128 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-15 20:53:48,666 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='6259bf3c53fb5c42c3a6af80', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:376}] to localhost:27017
+2022-04-15 20:53:48,666 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259bf3c53fb5c42c3a6af80', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:377}] to localhost:27017
+2022-04-15 20:53:48,667 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='6259bf3c53fb5c42c3a6af80', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=72686300}
+2022-04-15 20:53:48,721 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-15 20:53:48,997 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-15 20:53:49,010 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-15 20:53:49,020 INFO org.springframework.boot.StartupInfoLogger [main] Started Accesoadatosaav2Application in 4.301 seconds (JVM running for 5.045)
+2022-04-15 20:54:49,249 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-15 20:54:49,249 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-04-15 20:54:49,250 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2022-04-15 20:54:49,368 INFO com.josefco.accesoadatosaav2.controller.CamionController [http-nio-8080-exec-2] begin findCamion by id 624c2c5d9a37974f386a733723r2
+2022-04-15 20:54:49,403 INFO com.josefco.accesoadatosaav2.controller.CamionController [http-nio-8080-exec-2] end findCamion by id624c2c5d9a37974f386a733723r2
+2022-04-15 20:54:49,503 INFO com.mongodb.diagnostics.logging.SLF4JLogger [nioEventLoopGroup-2-3] Opened connection [connectionId{localValue:3, serverValue:378}] to localhost:27017
+2022-04-15 20:54:49,545 INFO com.josefco.accesoadatosaav2.controller.CamionController [http-nio-8080-exec-3] 404: Camion no encontrado
+2022-04-15 20:54:58,685 INFO com.josefco.accesoadatosaav2.controller.PaqueteController [http-nio-8080-exec-4] begin findPaquete by id 97r32r
+2022-04-15 20:54:58,687 INFO com.josefco.accesoadatosaav2.controller.PaqueteController [http-nio-8080-exec-4] end findPaquete by id 97r32r
+2022-04-15 20:54:58,698 INFO com.josefco.accesoadatosaav2.controller.PaqueteController [http-nio-8080-exec-5] 404: Paquete no encontrado
+2022-04-15 20:55:04,563 INFO com.josefco.accesoadatosaav2.controller.ConductorController [http-nio-8080-exec-6] begin findConductor by id: 1
+2022-04-15 20:55:04,565 INFO com.josefco.accesoadatosaav2.controller.ConductorController [http-nio-8080-exec-6] end findConductor by id: 1
+2022-04-15 20:55:04,570 INFO com.josefco.accesoadatosaav2.controller.ConductorController [http-nio-8080-exec-7] 404: Conductor no encontrado

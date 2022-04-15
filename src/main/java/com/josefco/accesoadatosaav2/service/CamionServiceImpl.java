@@ -2,7 +2,9 @@ package com.josefco.accesoadatosaav2.service;
 
 
 import com.josefco.accesoadatosaav2.domain.Camion;
+import com.josefco.accesoadatosaav2.domain.Usuario;
 import com.josefco.accesoadatosaav2.exception.CamionNoEncontradoException;
+import com.josefco.accesoadatosaav2.exception.UsuarioNoEncontradoException;
 import com.josefco.accesoadatosaav2.repository.CamionRepository;
 import com.josefco.accesoadatosaav2.repository.ConductorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,8 +27,9 @@ public class CamionServiceImpl implements CamionService {
 
 
     @Override
-    public Mono<Camion> findCamion(String id) throws CamionNoEncontradoException {
-            return camionRepository.findById(id).onErrorReturn(new Camion());
+    public Mono<Camion> findCamion(String id) {
+        Mono<Camion> fallback = Mono.error(CamionNoEncontradoException::new);
+        return camionRepository.findById(id).switchIfEmpty(fallback);
     }
 
 

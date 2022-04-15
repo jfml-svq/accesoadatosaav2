@@ -3,10 +3,7 @@ package com.josefco.accesoadatosaav2.controller;
 import com.josefco.accesoadatosaav2.domain.Camion;
 import com.josefco.accesoadatosaav2.domain.Conductor;
 import com.josefco.accesoadatosaav2.domain.dto.AsignacionDTO;
-import com.josefco.accesoadatosaav2.exception.CamionNoEncontradoException;
-import com.josefco.accesoadatosaav2.exception.ConductorNoEncontradoException;
-import com.josefco.accesoadatosaav2.exception.Respuesta;
-import com.josefco.accesoadatosaav2.exception.RespuestaError;
+import com.josefco.accesoadatosaav2.exception.*;
 import com.josefco.accesoadatosaav2.service.CamionService;
 import com.josefco.accesoadatosaav2.service.ConductorService;
 import org.slf4j.Logger;
@@ -14,9 +11,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @RestController
 public class ConductorController {
@@ -30,44 +32,51 @@ public class ConductorController {
     private CamionService camionService;
 
     @GetMapping("/conductores")
-    public Flux<Conductor> findAllConductores() {
+    public ResponseEntity<Flux<Conductor>> findAllConductores() {
         logger.info("begin findAllConductores");
         Flux<Conductor> conductores;
         conductores = conductorService.findAllConductores();
         logger.info("end findAllConductores");
-        return conductores;
+        return ResponseEntity.ok().body(conductores);
     }
 
     @GetMapping("/conductor/{id}")
-    public Mono<Conductor> findConductor(@PathVariable String id) throws ConductorNoEncontradoException {
+    public ResponseEntity<Mono<Conductor>> findConductor(@PathVariable String id) throws ConductorNoEncontradoException {
         logger.info("begin findConductor by id: "+id);
         Mono<Conductor> conductor = conductorService.findConductor(id);
         logger.info("end findConductor by id: "+id);
-        return conductor;
+        return ResponseEntity.ok().body(conductor);
     }
 
+//    @DeleteMapping("/conductor/{id}")
+//    public ResponseEntity<Mono<Conductor>> removeConductor(@PathVariable String id) throws ConductorNoEncontradoException {
+//        logger.info("begin removeConductor by id: "+id);
+//        Mono<Conductor> Conductor = conductorService.deleteConductor(id);
+//        logger.info("end removeConductor by id: "+id);
+//        return ResponseEntity.ok().body(Conductor);
+//    }
+
     @DeleteMapping("/conductor/{id}")
-    public Mono<Conductor> removeConductor(@PathVariable String id) throws ConductorNoEncontradoException {
-        logger.info("begin removeConductor by id: "+id);
-        Mono<Conductor> Conductor = conductorService.deleteConductor(id);
-        logger.info("end removeConductor by id: "+id);
-        return Conductor;
+    public ResponseEntity<Mono<Void>> removeConductor(@PathVariable String id) throws ConductorNoEncontradoException {
+        logger.info("begin removeConductor");
+        logger.info("end removeConductor");
+        return ResponseEntity.ok().body(conductorService.deleteConductor(id));
     }
 
     @PostMapping("/conductores")
-    public Mono<Conductor> saveCondutor(@RequestBody Conductor conductor) {
+    public ResponseEntity<Mono<Conductor>> saveCondutor(@RequestBody Conductor conductor) {
         logger.info("begin saveCondutor");
         Mono<Conductor> newConductor = conductorService.saveConductor(conductor);
         logger.info("end saveCondutor");
-        return newConductor;
+        return ResponseEntity.ok().body(newConductor);
     }
 
     @PutMapping("/conductor/{id}")
-    public Mono<Conductor> modifyConductor(@RequestBody Conductor Conductor, @PathVariable String id) throws ConductorNoEncontradoException {
+    public ResponseEntity<Mono<Conductor>> modifyConductor(@RequestBody Conductor Conductor, @PathVariable String id) throws ConductorNoEncontradoException {
         logger.info("begin modifyConductor id: "+id);
         Mono<Conductor> newConductor = conductorService.modifyConductor(id, Conductor);
         logger.info("begin modifyConductor id: "+ id);
-        return newConductor;
+        return ResponseEntity.ok().body(newConductor);
     }
 
 
@@ -95,19 +104,29 @@ public class ConductorController {
         return ResponseEntity.ok(respuesta);
     }
 
-    @ExceptionHandler(ConductorNoEncontradoException.class)
-    public ResponseEntity<RespuestaError> handleConductorNoEncontradoException(ConductorNoEncontradoException cnee) {
-        RespuestaError errorResponse = new RespuestaError("1", cnee.getMessage());
-        logger.error(cnee.getMessage(), cnee);
+   @ExceptionHandler(ConductorNoEncontradoException.class)
+    public ResponseEntity<RespuestaError> handleConductorNotFoundException(ConductorNoEncontradoException cnee) {
+        RespuestaError errorResponse = RespuestaError.generalError(404, cnee.getMessage());
+        logger.info("404: Conductor no encontrado");
         return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
     }
 
-    // TODO Más tipos de excepciones que puedan generar errores
 
     @ExceptionHandler
     public ResponseEntity<RespuestaError> handleException(Exception exception) {
-        RespuestaError errorResponse = new RespuestaError("999", "Internal server error");
-        logger.error(exception.getMessage(), exception);
+        RespuestaError errorResponse = RespuestaError.generalError(999, "Internal server error");
         return new ResponseEntity<>(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<RespuestaError> handleException(MethodArgumentNotValidException manve) {
+        Map<String, String> errors = new HashMap<>();
+        manve.getBindingResult().getAllErrors().forEach(error -> {
+            String fieldName = ((FieldError) error).getField();
+            String message = error.getDefaultMessage();
+            errors.put(fieldName, message);
+        });
+
+        return ResponseEntity.badRequest().body(RespuestaError.validationError(errors));
     }
 }

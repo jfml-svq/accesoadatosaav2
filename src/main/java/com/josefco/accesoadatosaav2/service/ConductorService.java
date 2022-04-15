@@ -10,7 +10,7 @@ public interface ConductorService {
 
     Flux<Conductor> findAllConductores();
     Mono<Conductor> findConductor(String id) throws ConductorNoEncontradoException;
-    Mono<Conductor> deleteConductor (String id) throws  ConductorNoEncontradoException;
+    Mono<Void> deleteConductor (String id) throws  ConductorNoEncontradoException;
     Mono<Conductor> modifyConductor (String id, Conductor Conductor) throws ConductorNoEncontradoException;
 
     Flux<Conductor> findConductorByDireccion(String direccion) throws ConductorNoEncontradoException;

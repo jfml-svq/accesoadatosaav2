@@ -13,7 +13,7 @@ public interface PaqueteService {
     Mono<Paquete> findPaquete(String id) throws PaqueteNoEncontradoException;
 
     Mono<Paquete> addPaquete(PaquetDTO paquetDTO) throws Exception;
-    Mono<Paquete> deletePaquete(String id) throws PaqueteNoEncontradoException;
+    Mono<Void> deletePaquete(String id) throws PaqueteNoEncontradoException;
     Mono<Paquete> modifyPaquete(String id, Paquete Paquete) throws PaqueteNoEncontradoException;
 
     Flux<Paquete> findPaqueteByColor(String color) throws PaqueteNoEncontradoException;

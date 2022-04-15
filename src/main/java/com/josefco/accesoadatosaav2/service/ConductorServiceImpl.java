@@ -2,7 +2,11 @@ package com.josefco.accesoadatosaav2.service;
 
 import com.josefco.accesoadatosaav2.domain.Camion;
 import com.josefco.accesoadatosaav2.domain.Conductor;
+import com.josefco.accesoadatosaav2.domain.Paquete;
+import com.josefco.accesoadatosaav2.domain.Usuario;
 import com.josefco.accesoadatosaav2.exception.ConductorNoEncontradoException;
+import com.josefco.accesoadatosaav2.exception.PaqueteNoEncontradoException;
+import com.josefco.accesoadatosaav2.exception.UsuarioNoEncontradoException;
 import com.josefco.accesoadatosaav2.repository.CamionRepository;
 import com.josefco.accesoadatosaav2.repository.ConductorRepository;
 import com.josefco.accesoadatosaav2.repository.ConductorRepository;
@@ -25,17 +29,18 @@ public class ConductorServiceImpl implements ConductorService {
     }
 
     @Override
-    public Mono<Conductor> findConductor(String id) throws ConductorNoEncontradoException {
-        return conductorRepository.findById(id).onErrorReturn(new Conductor());
+    public Mono<Conductor> findConductor(String id) {
+        Mono<Conductor> fallback = Mono.error(ConductorNoEncontradoException::new);
+        return conductorRepository.findById(id).switchIfEmpty(fallback);
     }
-
 
     @Override
-    public Mono<Conductor> deleteConductor(String id) throws ConductorNoEncontradoException {
-        Mono<Conductor> conductor = conductorRepository.findById(id).onErrorReturn(new Conductor());
-        conductorRepository.delete(conductor.block());
-        return conductor;
+    public Mono<Void> deleteConductor(String id) {
+        Mono<Conductor> fallback = Mono.error(new ConductorNoEncontradoException());
+        conductorRepository.findById(id).switchIfEmpty(fallback);
+        return conductorRepository.deleteById(id);
     }
+
 
     @Override
     public Mono<Conductor> modifyConductor(String id, Conductor newConductor) throws ConductorNoEncontradoException {

@@ -10,6 +10,8 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -22,12 +24,16 @@ public class Usuario {
     @Id
     private String id;
     @Field
+    @NotNull
     private String nombre;
     @Field
+    @NotNull
     private String apellido;
     @Field
+    @NotNull
     private String telefono;
     @Field
+    @NotNull
     private String direccion;
     @Field(name = "fecha_reg")
     @JsonFormat(pattern="dd-MM-yyyy")
@@ -36,6 +42,10 @@ public class Usuario {
     private double lat;
     @Field
     private double lon;
+    @Field
+    @NotNull
+    @Email
+    private String email;
 
 
     /*@OneToMany(mappedBy = "usuario")

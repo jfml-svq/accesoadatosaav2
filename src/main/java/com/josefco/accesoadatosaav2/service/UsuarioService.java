@@ -13,7 +13,9 @@ public interface UsuarioService {
     Mono<Usuario> addUsuario(Usuario usuario);
     Mono<Void> deleteUsuario(String id) throws UsuarioNoEncontradoException;
     Mono<Usuario> modifyUsuario(String id, Usuario usuario) throws UsuarioNoEncontradoException;
+    public Mono<Boolean> usuarioExiste(String id);
 
+    Flux<Usuario> findAllByFilters(String nombre, String apellido, String direccion) throws UsuarioNoEncontradoException;
 
 
 //    Flux<Usuario> findUsuariosByDireccion(String direccion) throws UsuarioNoEncontradoException;

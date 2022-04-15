@@ -5,7 +5,9 @@ import com.josefco.accesoadatosaav2.domain.Conductor;
 import com.josefco.accesoadatosaav2.domain.Paquete;
 import com.josefco.accesoadatosaav2.domain.Usuario;
 import com.josefco.accesoadatosaav2.domain.dto.PaquetDTO;
+import com.josefco.accesoadatosaav2.exception.ConductorNoEncontradoException;
 import com.josefco.accesoadatosaav2.exception.PaqueteNoEncontradoException;
+import com.josefco.accesoadatosaav2.exception.UsuarioNoEncontradoException;
 import com.josefco.accesoadatosaav2.repository.ConductorRepository;
 import com.josefco.accesoadatosaav2.repository.PaqueteRepository;
 import com.josefco.accesoadatosaav2.repository.UsuarioRepository;
@@ -32,8 +34,9 @@ public class PaqueteServiceImpl implements PaqueteService {
     }
 
     @Override
-    public Mono<Paquete> findPaquete(String id) throws PaqueteNoEncontradoException {
-        return paqueteRepository.findById(id).onErrorReturn(new Paquete());
+    public Mono<Paquete> findPaquete(String id){
+        Mono<Paquete> fallback = Mono.error(PaqueteNoEncontradoException::new);
+        return paqueteRepository.findById(id).switchIfEmpty(fallback);
     }
 
     @Override
@@ -51,10 +54,10 @@ public class PaqueteServiceImpl implements PaqueteService {
 
 
     @Override
-    public Mono<Paquete> deletePaquete(String id) throws PaqueteNoEncontradoException {
-        Mono<Paquete> paquete = paqueteRepository.findById(id).onErrorReturn(new Paquete());
-        paqueteRepository.delete(paquete.block());
-        return paquete;
+    public Mono<Void> deletePaquete(String id){
+        Mono<Paquete> fallback = Mono.error(new PaqueteNoEncontradoException());
+        paqueteRepository.findById(id).switchIfEmpty(fallback);
+        return paqueteRepository.deleteById(id);
     }
 
     @Override

@@ -9,9 +9,17 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+
+import javax.validation.Valid;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Optional;
+import java.util.function.Predicate;
 
 @RestController
 public class UsuarioController {
@@ -21,13 +29,31 @@ public class UsuarioController {
     @Autowired
     private UsuarioService usuarioService;
 
+//    @GetMapping("/usuarios")
+//    public ResponseEntity<Flux<Usuario>> findAllUsuarios() {
+//        logger.info("begin findAllUsuarios");
+//        Flux<Usuario> usuarios;
+//        usuarios = usuarioService.findAllUsuarios();
+//        logger.info("end findAllUsuarios");
+//        return ResponseEntity.ok().body(usuarios);
+//    }
+
     @GetMapping("/usuarios")
-    public Flux<Usuario> findAllUsuarios() {
-        logger.info("begin findAllUsuarios");
+    public ResponseEntity<Flux<Usuario>> getUsuarios(
+            @RequestParam(name = "nombre", required = false) String nombre,
+            @RequestParam(name = "apellido", required = false) String apellido,
+            @RequestParam(name = "direccion", required = false) String direccion,
+            @RequestParam(name = "all", defaultValue = "true") boolean all) throws UsuarioNoEncontradoException {
+        logger.info("begin getUsuarios");
         Flux<Usuario> usuarios;
-        usuarios =  usuarioService.findAllUsuarios();
-        logger.info("end findAllUsuarios");
-        return usuarios;
+
+        if (all) {
+            usuarios = usuarioService.findAllUsuarios();
+        } else {
+            usuarios = usuarioService.findAllByFilters(nombre, apellido, direccion);
+        }
+        logger.info("end getUsuarios");
+        return ResponseEntity.ok().body(usuarios);
     }
 
 //    @RequestMapping(value = "/usuarios/direccion/{direccion}")
@@ -39,60 +65,68 @@ public class UsuarioController {
 //    }
 
     @GetMapping("/usuario/{id}")
-    public Mono<Usuario> getUsuario(@PathVariable String id) throws UsuarioNoEncontradoException {
+    public ResponseEntity<Mono<Usuario>> getUsuario(@PathVariable String id) throws UsuarioNoEncontradoException {
         logger.info("begin getUsuario");
-        Mono<Usuario> Usuario = usuarioService.findUsuario(id);
+        Mono<Usuario> usuario = usuarioService.findUsuario(id);
         logger.info("end getUsuario");
-        return Usuario;
+        return ResponseEntity.ok(usuario);
     }
 
+
+
     @DeleteMapping("/usuario/{id}")
-    public Mono<Void> deleteUsuario(@PathVariable String id) throws UsuarioNoEncontradoException {
+    public ResponseEntity<Mono<Void>> deleteUsuario(@PathVariable String id) throws UsuarioNoEncontradoException {
         logger.info("begin removeUsuario");
         //Mono<Usuario> Usuario = usuarioService.deleteUsuario(id);
         logger.info("end removeUsuario");
         //return Usuario;
-        return usuarioService.deleteUsuario(id);
+        return ResponseEntity.ok().body(usuarioService.deleteUsuario(id));
     }
 
     @PostMapping("/usuario")
-    public Mono<Usuario> addUsuario(@RequestBody Usuario usuario) {
+    public ResponseEntity<Mono<Usuario>> addUsuario(@Valid @RequestBody Usuario usuario) {
         logger.info("begin addUsuario");
         Mono<Usuario> newUsuario = usuarioService.addUsuario(usuario);
         logger.info("end addUsuario");
-        return newUsuario;
+        return ResponseEntity.ok().body(newUsuario);
     }
 
     @PutMapping("/usuario/{id}")
-    public Mono<Usuario> modifyUsuario(@RequestBody Usuario usuario, @PathVariable String id) throws UsuarioNoEncontradoException {
+    public ResponseEntity<Mono<Usuario>> modifyUsuario(@RequestBody Usuario usuario, @PathVariable String id) throws UsuarioNoEncontradoException {
         logger.info("begin modifyUsuario");
         Mono<Usuario> newUsuario = usuarioService.modifyUsuario(id, usuario);
         logger.info("end modifyUsuario");
-        return newUsuario;
+        return ResponseEntity.ok(newUsuario);
     }
 
-//    @GetMapping("/usuarios/contador")
-//    public int countUsuario(){
-//        logger.info("start countUsuario");
-//        int contador = usuarioService.countUsuario();
-//        logger.info("end countUsuario");
-//        return contador;
-//    }
 
 
 
     @ExceptionHandler(UsuarioNoEncontradoException.class)
-    public ResponseEntity<RespuestaError> handleUsuarioNoEncontradoException(UsuarioNoEncontradoException unee) {
-        RespuestaError errorResponse = new RespuestaError("1", unee.getMessage());
-        logger.info(unee.getMessage());
+    public ResponseEntity<RespuestaError> handleUserNotFoundException(UsuarioNoEncontradoException unee) {
+        RespuestaError errorResponse = RespuestaError.generalError(404, unee.getMessage());
+        logger.info("404: Usuario no encontrado");
         return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
     }
 
-    // TODO Más tipos de excepciones que puedan generar errores
 
     @ExceptionHandler
     public ResponseEntity<RespuestaError> handleException(Exception exception) {
-        RespuestaError errorResponse = new RespuestaError("999", "Internal server error");
+        RespuestaError errorResponse = RespuestaError.generalError(999, "Internal server error");
         return new ResponseEntity<>(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
     }
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<RespuestaError> handleException(MethodArgumentNotValidException manve) {
+        Map<String, String> errors = new HashMap<>();
+        manve.getBindingResult().getAllErrors().forEach(error -> {
+            String fieldName = ((FieldError) error).getField();
+            String message = error.getDefaultMessage();
+            errors.put(fieldName, message);
+        });
+
+        return ResponseEntity.badRequest().body(RespuestaError.validationError(errors));
+    }
+
+
 }
