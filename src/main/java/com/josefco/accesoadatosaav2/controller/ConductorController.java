@@ -48,13 +48,6 @@ public class ConductorController {
         return ResponseEntity.ok().body(conductor);
     }
 
-//    @DeleteMapping("/conductor/{id}")
-//    public ResponseEntity<Mono<Conductor>> removeConductor(@PathVariable String id) throws ConductorNoEncontradoException {
-//        logger.info("begin removeConductor by id: "+id);
-//        Mono<Conductor> Conductor = conductorService.deleteConductor(id);
-//        logger.info("end removeConductor by id: "+id);
-//        return ResponseEntity.ok().body(Conductor);
-//    }
 
     @DeleteMapping("/conductor/{id}")
     public ResponseEntity<Mono<Void>> removeConductor(@PathVariable String id) throws ConductorNoEncontradoException {

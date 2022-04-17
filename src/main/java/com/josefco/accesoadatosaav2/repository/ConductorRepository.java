@@ -9,6 +9,5 @@ import reactor.core.publisher.Flux;
 public interface ConductorRepository extends ReactiveMongoRepository<Conductor, String> {
 
     Flux<Conductor> findAll();
-    //Conductor findById(int id);
     Flux<Conductor> findConductorByDireccion(String direccion);
 }

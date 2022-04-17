@@ -17,9 +17,4 @@ public interface UsuarioService {
 
     Flux<Usuario> findAllByFilters(String nombre, String apellido, String direccion) throws UsuarioNoEncontradoException;
 
-
-//    Flux<Usuario> findUsuariosByDireccion(String direccion) throws UsuarioNoEncontradoException;
-
-//    int countUsuario();
-
 }

@@ -2,13 +2,8 @@ package com.josefco.accesoadatosaav2.service;
 
 import com.josefco.accesoadatosaav2.domain.Camion;
 import com.josefco.accesoadatosaav2.domain.Conductor;
-import com.josefco.accesoadatosaav2.domain.Paquete;
-import com.josefco.accesoadatosaav2.domain.Usuario;
 import com.josefco.accesoadatosaav2.exception.ConductorNoEncontradoException;
-import com.josefco.accesoadatosaav2.exception.PaqueteNoEncontradoException;
-import com.josefco.accesoadatosaav2.exception.UsuarioNoEncontradoException;
 import com.josefco.accesoadatosaav2.repository.CamionRepository;
-import com.josefco.accesoadatosaav2.repository.ConductorRepository;
 import com.josefco.accesoadatosaav2.repository.ConductorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

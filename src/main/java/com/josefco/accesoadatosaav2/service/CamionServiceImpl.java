@@ -2,9 +2,7 @@ package com.josefco.accesoadatosaav2.service;
 
 
 import com.josefco.accesoadatosaav2.domain.Camion;
-import com.josefco.accesoadatosaav2.domain.Usuario;
 import com.josefco.accesoadatosaav2.exception.CamionNoEncontradoException;
-import com.josefco.accesoadatosaav2.exception.UsuarioNoEncontradoException;
 import com.josefco.accesoadatosaav2.repository.CamionRepository;
 import com.josefco.accesoadatosaav2.repository.ConductorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,7 +58,6 @@ public class CamionServiceImpl implements CamionService {
         newCamion.setMarca(camion.getMarca());
         newCamion.setMatricula(camion.getMatricula());
         newCamion.setModelo(camion.getModelo());
-        //newCamion.setConductores(camion.getConductores());
         return camionRepository.save(newCamion);
     }
 
@@ -69,8 +66,4 @@ public class CamionServiceImpl implements CamionService {
         return camionRepository.findCamionesByMarca(marca);
     }
 
-//    @Override
-//    public int countCamiones() {
-//        return camionRepository.countCamiones();
-//    }
 }

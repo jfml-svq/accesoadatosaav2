@@ -52,17 +52,11 @@ public class UsuarioServiceImpl implements UsuarioService {
     }
 
 
-
-    //    public Mono<Void> deleteUsuario(String id){
-    //        return usuarioRepository.deleteById(id);
-    //    }
-
     public Mono<Void> deleteUsuario(String id){
         Mono<Usuario> fallback = Mono.error(new UsuarioNoEncontradoException());
         usuarioRepository.findById(id).switchIfEmpty(fallback);
         return usuarioRepository.deleteById(id);
     }
-
 
     @Override
     public Mono<Usuario> modifyUsuario(String id, Usuario newUsuario){

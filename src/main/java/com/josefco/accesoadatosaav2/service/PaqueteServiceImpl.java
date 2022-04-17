@@ -1,13 +1,9 @@
 package com.josefco.accesoadatosaav2.service;
 
 
-import com.josefco.accesoadatosaav2.domain.Conductor;
 import com.josefco.accesoadatosaav2.domain.Paquete;
-import com.josefco.accesoadatosaav2.domain.Usuario;
 import com.josefco.accesoadatosaav2.domain.dto.PaquetDTO;
-import com.josefco.accesoadatosaav2.exception.ConductorNoEncontradoException;
 import com.josefco.accesoadatosaav2.exception.PaqueteNoEncontradoException;
-import com.josefco.accesoadatosaav2.exception.UsuarioNoEncontradoException;
 import com.josefco.accesoadatosaav2.repository.ConductorRepository;
 import com.josefco.accesoadatosaav2.repository.PaqueteRepository;
 import com.josefco.accesoadatosaav2.repository.UsuarioRepository;
@@ -16,6 +12,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 @Service
 public class PaqueteServiceImpl implements PaqueteService {
@@ -41,17 +40,29 @@ public class PaqueteServiceImpl implements PaqueteService {
 
     @Override
     public Mono<Paquete> addPaquete(PaquetDTO paquetDTO) throws Exception {
+//        DATOS PARA GUARDAR CON PAQUETEDTO TODO
+//        Mono<Usuario> usuario = usuarioRepository.findById(paquetDTO.getUsuario()).onErrorReturn(new Usuario());
+//        Mono<Conductor> conductor = conductorRepository.findById(paquetDTO.getConductor()).onErrorReturn(new Conductor());
+//
+//        ModelMapper mapper = new ModelMapper();
+//        Paquete paquete = mapper.map(paquetDTO, Paquete.class);
+//        paquete.setUsuario(usuario.block());
+//        paquete.setConductor(conductor.block());
+//        return paqueteRepository.save(paquete);
+        LocalDate date = LocalDate.now();
+        DateTimeFormatter formatters = DateTimeFormatter.ofPattern("dd/MM/uuuu");
+        String text = date.format(formatters);
+        LocalDate parsedDate = LocalDate.parse(text, formatters);
 
-        Mono<Usuario> usuario = usuarioRepository.findById(paquetDTO.getUsuario()).onErrorReturn(new Usuario());
-        Mono<Conductor> conductor = conductorRepository.findById(paquetDTO.getConductor()).onErrorReturn(new Conductor());
-
-        ModelMapper mapper = new ModelMapper();
-        Paquete paquete = mapper.map(paquetDTO, Paquete.class);
-        paquete.setUsuario(usuario.block());
-        paquete.setConductor(conductor.block());
-        return paqueteRepository.save(paquete);
+        Paquete newpaquete = new Paquete();
+        newpaquete.setAncho(paquetDTO.getAncho());
+        newpaquete.setLargo(paquetDTO.getLargo());
+        newpaquete.setAlto(paquetDTO.getAlto());
+        newpaquete.setPeso(paquetDTO.getPeso());
+        newpaquete.setColor(paquetDTO.getColor());
+        newpaquete.setFecha(parsedDate);
+        return paqueteRepository.save(newpaquete);
     }
-
 
     @Override
     public Mono<Void> deletePaquete(String id){
@@ -81,31 +92,6 @@ public class PaqueteServiceImpl implements PaqueteService {
         return paqueteRepository.findPaqueteByColor(color) ;
     }
 
-//    @Override
-//    public int countPaquete() {
-//        return paqueteRepository.countPaquetes();
-//    }
-//
-//    @Override
-//    public Flux<Paquete> getPaqueteExtraPriceByPeso(int peso) {
-//        return paqueteRepository.getPaqueteExtraPriceByPeso(peso);
-//    }
-//
-//    @Override
-//    public Flux<Paquete> getPaquetesFilter(int ancho, int alto, int largo) throws PaqueteNoEncontradoException {
-//        return paqueteRepository.getPaquetesFilter(ancho, alto, largo);
-//    }
-//
-//    @Override
-//    public RutaDTO rutaPaquete(Paquete paquete) throws PaqueteNoEncontradoException {
-//        return paqueteRepository.rutaPaquete(paquete.getId());
-//    }
-
-//    @Override
-//    public RutaDTO rutaPaquete(int idPaquete) throws PaqueteNoEncontradoException {
-//
-//        return paqueteRepository.rutaPaquete(idPaquete);
-//    }
 
 
 }

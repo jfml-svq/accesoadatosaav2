@@ -18,8 +18,6 @@ import reactor.core.publisher.Mono;
 import javax.validation.Valid;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
-import java.util.function.Predicate;
 
 @RestController
 public class UsuarioController {
@@ -29,14 +27,6 @@ public class UsuarioController {
     @Autowired
     private UsuarioService usuarioService;
 
-//    @GetMapping("/usuarios")
-//    public ResponseEntity<Flux<Usuario>> findAllUsuarios() {
-//        logger.info("begin findAllUsuarios");
-//        Flux<Usuario> usuarios;
-//        usuarios = usuarioService.findAllUsuarios();
-//        logger.info("end findAllUsuarios");
-//        return ResponseEntity.ok().body(usuarios);
-//    }
 
     @GetMapping("/usuarios")
     public ResponseEntity<Flux<Usuario>> getUsuarios(
@@ -56,13 +46,6 @@ public class UsuarioController {
         return ResponseEntity.ok().body(usuarios);
     }
 
-//    @RequestMapping(value = "/usuarios/direccion/{direccion}")
-//    public Flux<Usuario> findUsuariosByDireccion(@PathVariable String direccion) throws UsuarioNoEncontradoException {
-//        logger.info("begin findUsuariosFilter");
-//        Flux<Usuario> usuarios = usuarioService.findUsuariosByDireccion(direccion);
-//        logger.info("end findUsuariosFilter");
-//        return usuarios;
-//    }
 
     @GetMapping("/usuario/{id}")
     public ResponseEntity<Mono<Usuario>> getUsuario(@PathVariable String id) throws UsuarioNoEncontradoException {
@@ -71,8 +54,6 @@ public class UsuarioController {
         logger.info("end getUsuario");
         return ResponseEntity.ok(usuario);
     }
-
-
 
     @DeleteMapping("/usuario/{id}")
     public ResponseEntity<Mono<Void>> deleteUsuario(@PathVariable String id) throws UsuarioNoEncontradoException {
@@ -99,16 +80,12 @@ public class UsuarioController {
         return ResponseEntity.ok(newUsuario);
     }
 
-
-
-
     @ExceptionHandler(UsuarioNoEncontradoException.class)
     public ResponseEntity<RespuestaError> handleUserNotFoundException(UsuarioNoEncontradoException unee) {
         RespuestaError errorResponse = RespuestaError.generalError(404, unee.getMessage());
         logger.info("404: Usuario no encontrado");
         return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
     }
-
 
     @ExceptionHandler
     public ResponseEntity<RespuestaError> handleException(Exception exception) {

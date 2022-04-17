@@ -4,7 +4,6 @@ import com.josefco.accesoadatosaav2.domain.Paquete;
 import com.josefco.accesoadatosaav2.domain.dto.PaquetDTO;
 import com.josefco.accesoadatosaav2.exception.PaqueteNoEncontradoException;
 import com.josefco.accesoadatosaav2.exception.RespuestaError;
-import com.josefco.accesoadatosaav2.exception.UsuarioNoEncontradoException;
 import com.josefco.accesoadatosaav2.service.PaqueteService;
 import com.josefco.accesoadatosaav2.service.UsuarioService;
 import org.slf4j.Logger;
@@ -77,14 +76,6 @@ public class PaqueteController {
     }
 
 
-//    @PutMapping("/paquete/{id}/ruta")
-//    public RutaDTO rutaPaquete(@PathVariable int id) throws PaqueteNoEncontradoException, UsuarioNoEncontradoException {
-//        logger.info("begin modifyPaquete by id" + id);
-//        Paquete paquete = paqueteService.findPaquete(id);
-//        RutaDTO rutaDTO = new RutaDTO(paquete);
-//        logger.info("end modifyPaquete by id " +id);
-//        return rutaDTO;
-//    }
 
 
     @PutMapping("/paquete/{id}")

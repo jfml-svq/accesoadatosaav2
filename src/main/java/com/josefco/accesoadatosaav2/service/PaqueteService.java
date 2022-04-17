@@ -17,13 +17,4 @@ public interface PaqueteService {
     Mono<Paquete> modifyPaquete(String id, Paquete Paquete) throws PaqueteNoEncontradoException;
 
     Flux<Paquete> findPaqueteByColor(String color) throws PaqueteNoEncontradoException;
-
-//    int countPaquete();
-//
-//
-//    Flux<Paquete> getPaqueteExtraPriceByPeso(int peso);
-//
-//    Flux<Paquete> getPaquetesFilter(int ancho, int alto, int largo) throws PaqueteNoEncontradoException;
-//
-//    RutaDTO rutaPaquete(Paquete paquete) throws PaqueteNoEncontradoException;
 }

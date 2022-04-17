@@ -16,5 +16,4 @@ public interface CamionService {
 
     Flux<Camion> findCamionesByMarca(String marca) throws CamionNoEncontradoException;
 
-//    int countCamiones();
 }

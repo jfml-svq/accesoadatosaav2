@@ -12,8 +12,4 @@ public interface CamionRepository extends ReactiveMongoRepository<Camion, String
     Flux<Camion> findAll();
 
     Flux<Camion> findCamionesByMarca(String marca) throws CamionNoEncontradoException;
-    //Camion findById(int id);
-
-//    @Query("SELECT COUNT(*) FROM camiones")
-//    int countCamiones();
 }

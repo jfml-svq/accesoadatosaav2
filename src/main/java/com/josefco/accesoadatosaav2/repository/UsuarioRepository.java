@@ -13,17 +13,7 @@ public interface UsuarioRepository extends ReactiveMongoRepository<Usuario, Stri
 
     Flux<Usuario> findAll();
 
-    //Flux<Usuario> findUsuariosByDireccion(String direccion);
-
     Flux<Usuario> findByNombreOrApellidoOrDireccion(String nombre, String apellido, String direccion);
-
-
-    //Usuario findById(int id);
-
-
-//    //SQL
-//    @Query(value = "SELECT COUNT(*) FROM \"usuarios\"", nativeQuery = true)
-//    int countUsuarios();
 
     //RutaDTO rutaPaquete(int id_paquete);
 }
